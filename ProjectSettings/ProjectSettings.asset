@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 66334f89586234f4fabcc6cce7d9600c
+  productGUID: 09eeb3d2eeb4bd9418aeff0f12ffe4cd
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Animal-World
+  productName: Animal World
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -663,9 +663,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 053d5fe2-567a-4917-8e17-b46e7ebf2f3b
-  projectName: Animal-World
-  organizationId: gerard-parareda
+  cloudProjectId: 1a6d9c14-6b3b-43af-8325-154a5381693c
+  projectName: Animal World (1)
+  organizationId: yellowwinner
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
