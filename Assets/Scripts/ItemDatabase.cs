@@ -31,6 +31,8 @@ public class ItemDatabase : MonoBehaviour
             itemDatabase.Add(newItem);
             Debug.Log("Added item #" + newItem.id + " into the database. (" + newItem.name + ")");
 		}
+
+        gameObject.GetComponent<Inventory>().slots[2] = new InventoryItem(GetItemByID(1));
 	}
     
     /// <summary>
@@ -46,7 +48,6 @@ public class ItemDatabase : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		
 	}
 }
 
@@ -54,20 +55,32 @@ public class ItemDatabase : MonoBehaviour
 public class Item
 {
 	public string name;
+    public string type;
 	public int id;
 	public bool stackable;
 
+    /// <summary>
+    /// Create a template item with the ID of -1.
+    /// </summary>
 	public Item()
 	{
-		this.id = -1;
-		this.name = "invalid_item";
-		this.stackable = false;
+		id = -1;
+		name = "invalid_item";
+		stackable = false;
+        type = "invalid_type";
 	}
 
-    public Item(int id, string name, bool stackable)
+    /// <summary>
+    /// Create an item with the given parameters.
+    /// </summary>
+    /// <param name="id">Identifier.</param>
+    /// <param name="name">Name.</param>
+    /// <param name="stackable">The ability to stack this item.</param>
+    public Item(int id, string name, string type, bool stackable)
 	{
 		this.id = id;
 		this.name = name;
 		this.stackable = stackable;
+        this.type = type;
 	}
 }

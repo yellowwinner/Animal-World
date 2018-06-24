@@ -1,5 +1,6 @@
 ﻿{
     "name": "TestObject",
     "id": 1,
+	"type": "TestType",
     "stackable": true
 }
